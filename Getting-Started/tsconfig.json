@@ -7,5 +7,5 @@
         "strict": true,
         "moduleResolution": "classic",
     },
-    "include": ["src/**/**"]
+    "include": ["src/**/*"]
 }
