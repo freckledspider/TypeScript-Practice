@@ -5,13 +5,11 @@ const express = require("express")
 // Create application object
 const app: Application = express()
 
-const controller: RequestHandler = (req: Request, res: Response) => {
-    res.json({"Message": "Hello World"})
-}
-
 // Routes
-app.get("/", controller)
+app.get("/", (req: Request, res: Response) => {
+    res.json({"Message": "Hello World"})
+})
 
 app.listen(4000, () => {
-
+    console.log("Listening on port 4000")
 })
