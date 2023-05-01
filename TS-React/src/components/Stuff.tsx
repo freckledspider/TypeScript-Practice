@@ -1,6 +1,6 @@
 interface StuffProps {
     word: string,
-    cheese?: string,
+    cheese?: "gouda"|"muster"|"brie",
     something?: string|number
 }
 
