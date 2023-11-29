@@ -40,8 +40,21 @@
 // const medium = 2;
 // const large = 3;
 
-// pascal naming convention
-const enum Size { Small = 1, Medium, Large }; // automatically assigned 0, 1, 2, or can be assigned values
+// // pascal naming convention
+// const enum Size { Small = 1, Medium, Large }; // automatically assigned 0, 1, 2, or can be assigned values
 
-let mySize: Size = Size.Medium;
-console.log(mySize);
+// let mySize: Size = Size.Medium;
+// console.log(mySize);
+
+// ----------------------------------------------
+// functions
+
+function calculateTax(income: number, taxYear = 2022): number {
+    if (taxYear < 2022)
+    return income * 1.2;
+return income * 1.3;
+}
+
+// make optional with '?' or give a default value
+
+calculateTax(10_000, 2023)
