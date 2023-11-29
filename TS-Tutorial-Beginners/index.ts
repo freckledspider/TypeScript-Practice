@@ -33,3 +33,15 @@
 
 // restrict tuples to only 2 values
 
+// ----------------------------------------------
+// enums
+
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+// pascal naming convention
+const enum Size { Small = 1, Medium, Large }; // automatically assigned 0, 1, 2, or can be assigned values
+
+let mySize: Size = Size.Medium;
+console.log(mySize);
