@@ -6,11 +6,21 @@
 //     age += 10;
 // console.log(age)
 
-let sales = 123_456_789;
-let course = 'TypeScript';
-let is_published = true;
-let level;
+// ----------------------------------------------
+// any type
 
-function render(document) {
-    console.log(document)
-}
+// let sales = 123_456_789;
+// let course = 'TypeScript';
+// let is_published = true;
+// let level;
+
+// function render(document) {
+//     console.log(document)
+// }
+
+// ----------------------------------------------
+// arrays
+
+// let numbers = [] = [];
+// numbers.forEach(n => n.);
+
