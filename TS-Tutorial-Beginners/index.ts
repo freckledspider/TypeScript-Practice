@@ -49,12 +49,26 @@
 // ----------------------------------------------
 // functions
 
-function calculateTax(income: number, taxYear = 2022): number {
-    if (taxYear < 2022)
-    return income * 1.2;
-return income * 1.3;
-}
+// function calculateTax(income: number, taxYear = 2022): number {
+//     if (taxYear < 2022)
+//     return income * 1.2;
+// return income * 1.3;
+// }
 
-// make optional with '?' or give a default value
+// // make optional with '?' or give a default value
 
-calculateTax(10_000, 2023)
+// calculateTax(10_000, 2023)
+
+// ----------------------------------------------
+// objects
+
+let employee:  {
+    readonly id: number,
+    name?: string,
+    retire: (date: Date) => void
+} = { 
+    id: 1, 
+    name: 'Mosh',
+    retire: (date: Date) => {
+        console.log(date)
+    } };
