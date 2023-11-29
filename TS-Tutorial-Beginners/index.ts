@@ -24,3 +24,12 @@
 // let numbers = [] = [];
 // numbers.forEach(n => n.);
 
+// ----------------------------------------------
+// tuples
+
+// 1, 'Mosh'
+// let user: [number, string] = [1, 'Mosh'];
+// user.push(1);
+
+// restrict tuples to only 2 values
+
