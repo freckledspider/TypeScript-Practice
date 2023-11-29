@@ -92,14 +92,50 @@
 
 // union types
 
-function kgToLbs(weight: number | string): number {
-    // narrowing
-    if (typeof weight === 'number') 
-        return weight * 2.2;
-        else {
-            return parseInt(weight) * 2.2;
-        }
-    };
+// function kgToLbs(weight: number | string): number {
+//     // narrowing
+//     if (typeof weight === 'number') 
+//         return weight * 2.2;
+//         else {
+//             return parseInt(weight) * 2.2;
+//         }
+//     };
 
-kgToLbs(10);
-kgToLbs('10kg');
+// kgToLbs(10);
+// kgToLbs('10kg');
+
+// intersection types
+
+// type Draggable = {
+//     drag: () => void
+// }
+
+// type Resizable = {
+//     resize: () => void
+// }
+
+// type UIWidget = Draggable & Resizable;
+
+// let textBox: UIWidget = {
+//     drag: () => {},
+//     resize: () => {}
+// }
+
+// literal types
+
+// literal (exact, specific)
+// type Quantity = 50 | 100;
+// let quantity: Quantity = 100;
+
+// type Metric = 'cm' | 'inch';
+
+// nullable types
+
+function greet(name: string | null | undefined) {
+    if (name)
+    console.log(name.toUpperCase())
+else
+    console.log('Hola')
+}
+
+greet(undefined);
